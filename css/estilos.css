@@ -1,0 +1,216 @@
+:root {
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 62.5%;
+  background-image: url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.mainbody {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mainbody-header-title-desc h1 {
+  color: var(--Very-Dark-Magenta);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 90%;
+  font-weight: bold;
+}
+.mainbody-header-title-desc-p {
+  font-size: 1.15rem;
+  text-align: center;
+  color: var(--Dark-Grayish-Magenta);
+}
+
+.mainbody-header-rate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*&-span {
+      margin: auto;
+      background: url("../images/icon-star.svg");
+      height: 16px;
+      width: 85px;
+      display: block;
+      background-repeat: repeat;
+      margin-bottom: 10px;
+  } */
+}
+.mainbody-header-rate-bx1 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.mainbody-header-rate-bx-img {
+  margin-top: 20px;
+}
+.mainbody-header-rate-p1 {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+.mainbody-header-rate-bx2 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.mainbody-header-rate-p2 {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+.mainbody-header-rate-bx3 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5%;
+  margin-bottom: 50px;
+}
+.mainbody-header-rate-p3 {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+
+.mainbody-comments {
+  display: flex;
+  flex-direction: column;
+  color: var(--White);
+  font-size: 1.1rem;
+}
+.mainbody-comments img {
+  border-radius: 60%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 40px;
+  margin-right: 20px;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  display: inline-block;
+  margin-top: auto;
+}
+.mainbody-comments-block1 {
+  padding: 5%;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.mainbody-comments-block2 {
+  padding: 5%;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.mainbody-comments-block3 {
+  padding: 5%;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.mainbody-comments-subject-div {
+  display: inline-block;
+}
+.mainbody-comments-subject-div p {
+  margin-top: 3rem;
+}
+.mainbody-comments-span {
+  display: block;
+  color: var(--Soft-Pink);
+}
+.mainbody-comments-description {
+  display: block;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+  }
+  .mainbody-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainbody-header-title-desc {
+    width: 40%;
+  }
+  .mainbody-header-title-desc h1 {
+    text-align: left;
+    font-size: 2.7rem;
+    margin-left: 20%;
+  }
+  .mainbody-header-title-desc-p {
+    text-align: left;
+    margin-left: 20%;
+  }
+  .mainbody-header-rate {
+    margin-top: 6%;
+  }
+  .mainbody-header-rate-bx1 {
+    display: flex;
+    transform: translateX(-200px);
+  }
+  .mainbody-header-rate-bx-img {
+    margin: auto;
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+  .mainbody-header-rate-p1 {
+    margin: auto;
+    padding: 20px;
+  }
+  .mainbody-header-rate-bx2 {
+    display: flex;
+    transform: translateX(-150px);
+  }
+  .mainbody-header-rate-p2 {
+    margin: auto;
+    padding: 20px;
+  }
+  .mainbody-header-rate-bx3 {
+    display: flex;
+    transform: translateX(-100px);
+  }
+  .mainbody-header-rate-p3 {
+    margin: auto;
+    padding: 20px;
+  }
+  .mainbody-comments {
+    flex-direction: row;
+  }
+  .mainbody-comments-block1 {
+    padding: 0%;
+    margin-left: 8%;
+    margin-right: 30px;
+    border-radius: 2%;
+  }
+  .mainbody-comments-block2 {
+    padding: 0%;
+    margin-right: 30px;
+    border-radius: 2%;
+    transform: translateY(15px);
+  }
+  .mainbody-comments-block3 {
+    padding: 0%;
+    margin-right: 8%;
+    border-radius: 2%;
+    transform: translateY(30px);
+  }
+}/*# sourceMappingURL=estilos.css.map */
